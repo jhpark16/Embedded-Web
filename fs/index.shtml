@@ -1,0 +1,54 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+<title>STM32F4x7LED</title>
+<meta http-equiv="Content-Type" content="text/html; charset=windows-1252"/>
+</head>
+<body>
+<div style="width: 600px;">
+<div style="text-align: center;" align="center">
+<h1>LED switches</h1>
+</div>
+<div>
+<table style="width: 100%; height: 35px;" border="1" cellpadding="5" cellspacing="2">
+<tbody>
+<tr>
+</tr>
+<tr>
+<td style="font-family: Verdana; font-weight: bold; font-style: italic; background-color: rgb(0, 128, 128); text-align: center;"><a href="/index.shtml"><span style="color: white;">LED Control</span></a></td>
+<td style="font-family: Verdana; font-weight: bold; font-style: italic; background-color: rgb(0, 128, 128); text-align: center;"><a href="/voltage.shtml"><span style="color: white;">Battery Voltage</span></a></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<small>
+<span style="font-family: Verdana;">
+This page allows you to control the four LEDs: LED1, LED2, LED3 and LED4 located in
+the&nbsp;black STM32F407VET board. To put on/off a LED you have to
+check/uncheck its corresponding checkbox. Then you have to click on
+"Send" button to submit the new LEDs configuration.
+</span>
+</small>
+<br/>
+<br/>
+<table style="width: 100%; color: white; height: 31px;" white="" color="" ;="" 100="" border="0" cellpadding="3" cellspacing="0">
+<tbody>
+<tr>
+<td class="tabtitle" style="height: 15px; background-color: rgb(0, 128, 128);"><big><strong>STM32
+Webserver LEDs Control</strong></big></td>
+</tr>
+</tbody>
+</table>
+<br/>
+<form method="get" action="/index.cgi">
+<input value="1" name="led" type="checkbox" <!--#1--> />LED1<br/>
+<input value="2" name="led" type="checkbox" <!--#2--> />LED2<br/>
+<input value="3" name="led" type="checkbox" <!--#3--> />LED3<br/>
+<input value="4" name="led" type="checkbox" <!--#4--> />LED4<br/>
+<br/>
+<input value="Send" type="submit"/>
+</form>
+</div>
+</div>
+</body>
+</html>
